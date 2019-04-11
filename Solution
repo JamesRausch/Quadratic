@@ -1,0 +1,14 @@
+public class Solution {
+    protected double xOne;
+    protected double xTwo;
+    Solution(double xOne, double xTwo){
+        this.xOne = xOne;
+        this.xTwo = xTwo;
+    }
+    double getxOne(){
+        return xOne;
+    }
+    double getxTwo(){
+        return xTwo;
+    }
+}
