@@ -1,0 +1,15 @@
+
+
+class ABC {
+
+    ABC(){
+
+    }
+    //Solve for aX2 + bx + c;
+    Solution solve(double a, double b, double c) {
+        var xOne = (-b + Math.sqrt((b * b) - (4 * a * c)) )/ (2 * a);
+        var xTwo = (-b - Math.sqrt((b * b) - (4 * a * c))) / (2 * a);
+        return new Solution(xOne, xTwo);
+    }
+
+}
