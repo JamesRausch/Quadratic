@@ -1,0 +1,40 @@
+import java.util.Arrays;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class ABCTest {
+
+    @org.junit.jupiter.api.BeforeEach
+    void setUp() {
+    }
+
+    @org.junit.jupiter.api.AfterEach
+    void tearDown() {
+    }
+
+    public ABCTest() {
+        super();
+    }
+
+    @org.junit.jupiter.api.Test
+    void solve() {
+        ABC testOne = new ABC();
+        ABC testTwo = new ABC();
+
+        Solution expectedOne = new Solution(-1,-3);
+        Solution actual =  testOne.solve(1,4,3);
+        assertEquals(expectedOne.getxOne(),actual.getxOne());
+        assertEquals(expectedOne.getxTwo(),actual.getxTwo());
+        Solution expectedTwo = new Solution(-0.10874509589396678,2.7587450958939668);
+        Solution actualTwo = testTwo.solve(-20,53,6);
+        assertEquals(expectedTwo.getxOne(),actualTwo.getxOne());
+        assertEquals(expectedTwo.getxTwo(),actualTwo.getxTwo());
+
+
+
+
+
+
+    }
+
+}
